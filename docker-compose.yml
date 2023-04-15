@@ -1,0 +1,27 @@
+version: '3'
+services:
+  nginx: 
+    build: ./nginx
+    ports:
+      - "80:80"
+    depends_on: 
+      - backend1
+      - backend2
+      - backend3
+  backend1:
+    build: ./backend
+    hostname: server1
+    ports: 
+      - "90:9000"
+  backend2:
+    build: ./backend
+    hostname: server2
+    ports: 
+      - "91:9000"
+  backend3:
+    build: ./backend
+    hostname: server3
+    ports: 
+      - "92:9000"
+    
+    
