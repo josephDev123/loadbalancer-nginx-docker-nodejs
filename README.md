@@ -43,10 +43,11 @@ The `backends` service uses the `node:14.17.3-alpine3.14` Docker image and runs 
 
 The `nginx` service uses the `nginx:1.21.6` Docker image and runs the Nginx load balancer. It also mounts the `nginx` directory to the `/etc/nginx` directory in the container to provide the Nginx configuration files.
 
+## Diagram
+
+<img src='Nginx load-balancer.png' alt=''/>
+
 ## Conclusion
 
 This sample project provides a basic setup for setting up a load balancer using Nginx, Node.js, Docker, and Docker Compose. You can use this as a starting point for your own load balancer projects.
 
-## Diagram
-
-<img src='Nginx load-balancer.png' alt=''/>
